@@ -1,0 +1,10 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Source: git://git.tizen.org/tools/testlab/sd-mux
+
+Files: *
+Copyright: © 2015 Samsung Electronics Co., Ltd All Rights Reserved
+License: Apache-2.0
+
+Files: debian/*
+Copyright: © 2015 Samsung Electronics Co., Ltd All Rights Reserved
+License: Apache-2.0
