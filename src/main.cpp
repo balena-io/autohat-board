@@ -47,6 +47,7 @@ enum CCCommand {
     CCC_ShowSerial,
     CCC_SetSerial,
     CCC_Init,
+    CCC_Status,
     CCC_None
 };
 
@@ -393,6 +394,26 @@ int setPins(unsigned char pins, CCOptionValue options[]) {
     return ret;
 }
 
+int showStatus(CCOptionValue options[]) {
+    unsigned char pins;
+    struct ftdi_context *ftdi = prepareDevice(options, &pins);
+    if (ftdi == NULL)
+        return EXIT_FAILURE;
+
+    ftdi_usb_close(ftdi);
+    ftdi_free(ftdi);
+
+    if (!(pins & POWER_SW_ON && pins & POWER_SW_OFF)) {
+        fprintf(stdout, "Device not initialized!\n");
+        return 0;
+    }
+
+    fprintf(stdout, "USB connected to: %s\n", pins & USB_SEL ? "TS" : "DUT");
+    fprintf(stdout, "SD connected to: %s\n", pins & SOCKET_SEL ? "TS" : "DUT");
+
+    return 0;
+}
+
 int parseArguments(int argc, const char **argv, CCCommand *cmd, int *arg, char *args, size_t argsLen,
                    CCOptionValue options[]) {
     char c;
@@ -410,6 +431,7 @@ int parseArguments(int argc, const char **argv, CCCommand *cmd, int *arg, char *
             { "ts", 's', POPT_ARG_NONE, NULL, 's', "connects SD card and USB to the test server", NULL },
             { "pins", 'p', POPT_ARG_INT, arg, 'p', "write pin state in bitbang mode", NULL },
             { "tick", 'c', POPT_ARG_NONE, NULL, 'c', "turn off and on power supply of DUT", NULL },
+            { "status", 'u', POPT_ARG_NONE, NULL, 'u', "show current status: DUT or TS or NOINIT", NULL },
             // Options
             { "tick-time", 'm', POPT_ARG_INT, &options[CCO_TickTime].argn, 'm', "set time delay for 'tick' command",
                     NULL },
@@ -457,6 +479,9 @@ int parseArguments(int argc, const char **argv, CCCommand *cmd, int *arg, char *
                 break;
             case 'c':
                 *cmd = CCC_Tick;
+                break;
+            case 'u':
+                *cmd = CCC_Status;
                 break;
             case 'n':
                 options[CCO_BitsInvert].argn = 1;
@@ -513,6 +538,8 @@ int main(int argc, const char **argv) {
         return doPower(true, true, options);
     case CCC_Pins:
         return setPins((unsigned char)arg, options);
+    case CCC_Status:
+        return showStatus(options);
     }
 
     return EXIT_SUCCESS;
