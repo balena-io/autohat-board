@@ -19,8 +19,8 @@
 ############################# Check minimum CMake version #####################
 
 CMAKE_MINIMUM_REQUIRED(VERSION 2.8.3)
-PROJECT("cum-ctrl")
-set(CUMCTRL_VERSION 0.0.1)
+PROJECT("sd-mux-ctrl")
+set(SDMUXCTRL_VERSION 0.0.1)
 
 ############################# cmake packages ##################################
 
