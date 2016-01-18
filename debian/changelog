@@ -1,5 +1,11 @@
 sd-mux-ctrl (0.0.1) UNRELEASED; urgency=medium
 
+  * Add command for getting current status of device.
+
+ -- Adam Malinowski <a.malinowsk2@partner.samsung.com>  Mon Jan 18 09:28:21 2016 +0100
+
+sd-mux-ctrl (0.0.1) UNRELEASED; urgency=medium
+
   * Initial release.
 
  -- Adam Malinowski <a.malinowsk2@partner.samsung.com>  Tue, 16 Feb 2016 09:31:30 +0100
