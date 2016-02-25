@@ -36,5 +36,9 @@ cmake -DCMAKE_INSTALL_PREFIX=/usr
 rm -rf %{buildroot}
 %make_install
 
+mkdir -p %{buildroot}/%{_mandir}/man1
+install -m644 docs/man/bmaptool.1 %{buildroot}/%{_mandir}/man1
+
 %files
 %{_bindir}/%{name}
+%{_mandir}/man1/*
