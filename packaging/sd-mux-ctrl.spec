@@ -15,6 +15,7 @@ Source0:        %{name}_%{version}.tar.gz
 BuildRequires:  cmake
 Requires:       libftdi >= 1.2
 Requires:       popt
+Requires:       awk
 
 BuildRoot:  %{_tmppath}/%{name}_%{version}-build
 
@@ -40,7 +41,10 @@ rm -rf %{buildroot}
 
 mkdir -p %{buildroot}/%{_mandir}/man1
 install -m644 docs/man/%{name}.1 %{buildroot}/%{_mandir}/man1
+install -d -m0755 %{buildroot}/%{_sysconfdir}/bash_completion.d/
+install -Dp -m0755 etc/bash_completion.d/%{name} %{buildroot}/%{_sysconfdir}/bash_completion.d/
 
 %files
 %{_bindir}/%{name}
 %{_mandir}/man1/*
+%{_sysconfdir}/bash_completion.d/*
