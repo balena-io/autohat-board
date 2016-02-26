@@ -5,6 +5,7 @@ Priority: optional
 Build-Depends: libftdi1-dev (>= 1.2),
                libpopt-dev,
                debhelper (>=9),
+               bash-completion,
 Standards-Version: 3.9.5
 
 Package: sd-mux-ctrl
