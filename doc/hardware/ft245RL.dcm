@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP FT245RL
+D USB to parallel FIFO interface
+K USB Parallel FIFO I/O  Converter
+F http://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT245R.pdf
+$ENDCMP
+#
+#End Doc Library
