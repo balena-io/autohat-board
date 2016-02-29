@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP MI0805K400R-10
+D Resistor
+K R DEV
+F http://www.farnell.com/datasheets/1685910.pdf
+$ENDCMP
+#
+#End Doc Library
