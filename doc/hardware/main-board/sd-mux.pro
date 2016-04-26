@@ -60,11 +60,10 @@ LibName28=atmel
 LibName29=contrib
 LibName30=valves
 LibName31=SDCARD
-LibName32=FT232H
-LibName33=ftdi
-LibName34=ft245RL
-LibName35=switch-ic
-LibName36=induction
+LibName32=ftdi
+LibName33=ft245RL
+LibName34=switch-ic
+LibName35=induction
 [schematic_editor]
 version=1
 PageLayoutDescrFile=

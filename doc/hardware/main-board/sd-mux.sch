@@ -30,7 +30,6 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:SDCARD
-LIBS:FT232H
 LIBS:ftdi
 LIBS:ft245RL
 LIBS:switch-ic
