@@ -29,7 +29,6 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:usd-plug
-LIBS:usd-adapter-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -50,7 +49,7 @@ U 1 1 561E0431
 P 7000 3200
 F 0 "P1" H 7000 3450 50  0000 C CNN
 F 1 "CONN_02X04" H 7000 2950 50  0000 C CNN
-F 2 "connectors:strip_2x4_1.27" H 7000 2000 60  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x04" H 7000 2000 60  0001 C CNN
 F 3 "" H 7000 2000 60  0000 C CNN
 	1    7000 3200
 	1    0    0    -1  
