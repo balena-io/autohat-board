@@ -1,7 +1,7 @@
 (export (version D)
   (design
-    (source /Users/desarrollo/Documents/resin/sd-mux/doc/hardware/usd-adapter/usd-adapter.sch)
-    (date "Friday, 17 June 2016 19:15:28")
+    (source /Users/desarrollo/Documents/Resin/sd-mux/doc/hardware/usd-adapter/usd-adapter.sch)
+    (date "Monday, 20 June 2016 'pmt' 13:37:24")
     (tool "Eeschema 4.0.2-stable")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -17,7 +17,7 @@
   (components
     (comp (ref P1)
       (value CONN_02X04)
-      (footprint Pin_Headers:Pin_Header_Straight_2x04)
+      (footprint connectors:PSB_IDC_4x2)
       (libsource (lib conn) (part CONN_02X04))
       (sheetpath (names /) (tstamps /))
       (tstamp 561E0431))
@@ -61,10 +61,10 @@
         (pin (num 7) (name 7) (type input))
         (pin (num 8) (name 8) (type input)))))
   (libraries
-    (library (logical conn)
-      (uri "/Library/Application Support/kicad/library/conn.lib"))
     (library (logical usd-plug)
-      (uri /Users/desarrollo/Documents/resin/sd-mux/doc/hardware/usd-adapter/usd-plug.lib)))
+      (uri /Users/desarrollo/Documents/Resin/sd-mux/doc/hardware/usd-adapter/usd-plug.lib))
+    (library (logical conn)
+      (uri "/Library/Application Support/kicad/library/conn.lib")))
   (nets
     (net (code 1) (name /N5)
       (node (ref P1) (pin 5))
