@@ -1141,7 +1141,7 @@ U 1 1 577C9BDB
 P 1950 8350
 F 0 "P1" H 2275 8225 50  0000 C CNN
 F 1 "USB_OTG" H 1950 8550 50  0000 C CNN
-F 2 "footprints:conn_usb_A" V 1900 8250 50  0001 C CNN
+F 2 "footprints:conn_usb_B_micro" V 1900 8250 50  0001 C CNN
 F 3 "" V 1900 8250 50  0000 C CNN
 	1    1950 8350
 	0    -1   1    0   
@@ -2102,13 +2102,13 @@ Wire Wire Line
 Text Label 6650 8100 0    60   ~ 0
 XO
 Text Label 3700 7500 0    60   ~ 0
-USB_DP_DN1
+USB_DN1+
 Text Label 3700 7700 0    60   ~ 0
-USB_DP_DN2
+USB_DN2+
 Text Label 3700 7600 0    60   ~ 0
-USB_DM_DN1
+USB_DN1-
 Text Label 3700 7800 0    60   ~ 0
-USB_DM_DN2
+USB_DN2-
 Wire Wire Line
 	6600 7000 6600 7300
 Connection ~ 6600 7200
@@ -2401,13 +2401,13 @@ NoConn ~ 4500 8600
 NoConn ~ 4500 7000
 NoConn ~ 4500 6900
 Text Label 2700 2450 0    60   ~ 0
-USB_DP_DN1
+USB_DN1+
 Text Label 2700 2350 0    60   ~ 0
-USB_DM_DN1
+USB_DN1-
 Text Label 2750 12200 0    60   ~ 0
-USB_DM_DN2
+USB_DN2-
 Text Label 2750 12500 0    60   ~ 0
-USB_DP_DN2
+USB_DN2+
 Wire Wire Line
 	2100 6800 1500 6800
 Connection ~ 2100 7100
@@ -2648,4 +2648,16 @@ Wire Wire Line
 	2250 8550 2750 8550
 Wire Wire Line
 	2750 8550 2750 9600
+Text Label 2550 8350 0    60   ~ 0
+USB_UP+
+Text Label 2550 8250 0    60   ~ 0
+USB_UP-
+Text Label 5650 12300 0    60   ~ 0
+USB_MUX1+
+Text Label 5650 12200 0    60   ~ 0
+USB_MUX1-
+Text Label 5600 13850 0    60   ~ 0
+USB_MUX2+
+Text Label 5600 13750 0    60   ~ 0
+USB_MUX2-
 $EndSCHEMATC
