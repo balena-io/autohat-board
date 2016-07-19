@@ -1,4 +1,4 @@
-update=Tue 15 Dec 2015 02:34:15 PM CET
+update=Tuesday, 19 July 2016 11:35:20
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,8 +23,16 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
-[general]
+[schematic_editor]
 version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
 [eeschema]
 version=1
 LibDir=
@@ -64,13 +72,7 @@ LibName32=ftdi
 LibName33=ft245RL
 LibName34=switch-ic
 LibName35=induction
-[schematic_editor]
+LibName36=TUSB4041IPAPR
+LibName37=ECS-3951M
+[general]
 version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=60
