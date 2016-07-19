@@ -1,4 +1,4 @@
-update=Tuesday, 19 July 2016 02:23:25
+update=Tuesday, 19 July 2016 11:35:20
 version=1
 last_client=kicad
 [pcbnew]
@@ -35,7 +35,7 @@ SpiceUseNetNumbers=0
 LabSize=60
 [eeschema]
 version=1
-LibDir=/Users/tomas/Downloads/TUSB4041IPAPR (1);/Users/tomas/Downloads/ECS-3951M
+LibDir=
 [eeschema/libraries]
 LibName1=sd-relay
 LibName2=power
