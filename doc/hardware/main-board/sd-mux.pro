@@ -1,4 +1,4 @@
-update=Wednesday, 13 July 2016 'amt' 02:24:48
+update=Tuesday, 19 July 2016 02:23:25
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,9 +23,19 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
 [eeschema]
 version=1
-LibDir=/Users/desarrollo/Downloads/TUSB4041IPAPR;/Users/desarrollo/Downloads/ECS-3951M
+LibDir=/Users/tomas/Downloads/TUSB4041IPAPR (1);/Users/tomas/Downloads/ECS-3951M
 [eeschema/libraries]
 LibName1=sd-relay
 LibName2=power
@@ -64,15 +74,5 @@ LibName34=switch-ic
 LibName35=induction
 LibName36=TUSB4041IPAPR
 LibName37=ECS-3951M
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=60
 [general]
 version=1
