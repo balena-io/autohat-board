@@ -1,4 +1,4 @@
-update=Tuesday, 19 July 2016 11:35:20
+update=Monday, 19 September 2016 'pmt' 15:43:44
 version=1
 last_client=kicad
 [pcbnew]
@@ -73,6 +73,5 @@ LibName33=ft245RL
 LibName34=switch-ic
 LibName35=induction
 LibName36=TUSB4041IPAPR
-LibName37=ECS-3951M
 [general]
 version=1
