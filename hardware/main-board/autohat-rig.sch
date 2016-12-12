@@ -35,17 +35,18 @@ LIBS:ft245RL
 LIBS:switch-ic
 LIBS:induction
 LIBS:TUSB4041IPAPR
-LIBS:sd-mux-cache
+LIBS:ZX62D-B-5P8
+LIBS:autohat-rig-cache
 EELAYER 25 0
 EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
 Sheet 1 1
-Title "sd-mux"
-Date "2016-02-26"
-Rev "2"
-Comp "SRPOL"
-Comment1 "Author: Adam Malinowski <a.malinowsk2@partner.samsung.com>"
+Title "autohat-rig"
+Date "2016-12-12"
+Rev "1.0"
+Comp "Resin.io"
+Comment1 "Author: Adam Malinowski <a.malinowsk2@partner.samsung.com> \\n        Tomás Villaseca <tomas@resin.io>"
 Comment2 "Copyright (c) 2016 Samsung Electronics Co., Ltd All Rights Reserved"
 Comment3 ""
 Comment4 ""
@@ -988,7 +989,7 @@ U 1 1 576C747A
 P 20200 12800
 F 0 "P8" H 20525 12675 50  0000 C CNN
 F 1 "USB_OTG" H 20200 13000 50  0000 C CNN
-F 2 "footprints:conn_usb_B_micro" H 20150 12700 50  0001 C CNN
+F 2 "footprints:TO_microUSB" H 20150 12700 50  0001 C CNN
 F 3 "" V 20150 12700 50  0000 C CNN
 	1    20200 12800
 	0    1    1    0   
@@ -1093,7 +1094,7 @@ U 1 1 577C9BDB
 P 1950 8350
 F 0 "P1" H 2275 8225 50  0000 C CNN
 F 1 "USB_OTG" H 1950 8550 50  0000 C CNN
-F 2 "footprints:conn_usb_B_micro" V 1900 8250 50  0001 C CNN
+F 2 "footprints:TO_microUSB" V 1900 8250 50  0001 C CNN
 F 3 "" V 1900 8250 50  0000 C CNN
 	1    1950 8350
 	0    -1   1    0   
