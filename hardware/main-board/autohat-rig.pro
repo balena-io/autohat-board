@@ -1,4 +1,4 @@
-update=Tuesday, 13 December 2016 'amt' 07:11:58
+update=Thursday, 12 January 2017 'pmt' 16:10:50
 version=1
 last_client=kicad
 [pcbnew]
@@ -33,6 +33,8 @@ NetFmtName=
 SpiceForceRefPrefix=0
 SpiceUseNetNumbers=0
 LabSize=60
+[general]
+version=1
 [eeschema]
 version=1
 LibDir=
@@ -73,5 +75,4 @@ LibName33=ft245RL
 LibName34=switch-ic
 LibName35=induction
 LibName36=TUSB4041IPAPR
-[general]
-version=1
+LibName37=TPS22860DBVR

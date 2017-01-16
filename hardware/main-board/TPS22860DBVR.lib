@@ -1,0 +1,31 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# TPS22860DBVR
+#
+DEF TPS22860DBVR U 0 40 Y Y 1 L N
+F0 "U" -300 200 50 H V L CNN
+F1 "TPS22860DBVR" -300 -300 50 H V L CNN
+F2 "SOT95P280X145-6N" 0 0 50 H I L CNN
+F3 "Good" 0 0 50 H I L CNN "Availability"
+F4 "0.39 USD" 0 0 50 H I L CNN "Price"
+F5 "Texas Instruments" 0 0 50 H I L CNN "MF"
+F6 "TPS22860 Ultra-low leakage load switch 6-SOT-23 -40 to 85" 0 0 50 H I L CNN "Description"
+F7 "SOT-23 Texas Instruments" 0 0 50 H I L CNN "Package"
+F8 "TPS22860DBVR" 0 0 50 H I L CNN "MP"
+DRAW
+P 2 0 0 10 300 200 300 -200 N
+P 2 0 0 10 300 -200 -300 -200 N
+P 2 0 0 10 -300 -200 -300 200 N
+P 2 0 0 10 -300 200 300 200 N
+X VOUT 1 500 100 200 L 40 40 0 0 O 
+X GND 2 500 -100 200 L 40 40 0 0 P 
+X VIN 4 -500 100 200 R 40 40 0 0 I 
+X VBIAS 5 -500 0 200 R 40 40 0 0 I 
+X ON 6 -500 -100 200 R 40 40 0 0 I 
+ENDDRAW
+ENDDEF
+#
+# End Library
