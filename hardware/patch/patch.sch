@@ -1,0 +1,211 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:TPS22860DBVR
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L TPS22860DBVR U1
+U 1 1 5888B9E7
+P 5900 3100
+F 0 "U1" H 5600 3350 50  0000 L CNN
+F 1 "TPS22860DBVR" H 5600 2800 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-6_Handsoldering" H 5900 3100 50  0001 L CNN
+F 3 "Good" H 5900 3100 50  0001 L CNN
+F 4 "0.39 USD" H 5900 3100 50  0001 L CNN "Price"
+F 5 "Texas Instruments" H 5900 3100 50  0001 L CNN "MF"
+F 6 "TPS22860 Ultra-low leakage load switch 6-SOT-23 -40 to 85" H 5900 3100 50  0001 L CNN "Description"
+F 7 "SOT-23 Texas Instruments" H 5900 3100 50  0001 L CNN "Package"
+F 8 "TPS22860DBVR" H 5900 3100 50  0001 L CNN "MP"
+	1    5900 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X06 P2
+U 1 1 5888BA4C
+P 7600 3250
+F 0 "P2" H 7600 3600 50  0000 C CNN
+F 1 "CONN_01X06" V 7700 3250 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x06_Pitch2.54mm" H 7600 3250 50  0001 C CNN
+F 3 "" H 7600 3250 50  0000 C CNN
+	1    7600 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 5888BB1C
+P 5000 3450
+F 0 "R1" V 5080 3450 50  0000 C CNN
+F 1 "10k" V 4950 3450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 4930 3450 50  0001 C CNN
+F 3 "" H 5000 3450 50  0000 C CNN
+	1    5000 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 5888BB86
+P 4600 3250
+F 0 "C1" H 4625 3350 50  0000 L CNN
+F 1 "1u" H 4625 3150 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 4638 3100 50  0001 C CNN
+F 3 "" H 4600 3250 50  0000 C CNN
+	1    4600 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 5888BBC5
+P 6850 3250
+F 0 "C2" H 6875 3350 50  0000 L CNN
+F 1 "100n" H 6875 3150 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 6888 3100 50  0001 C CNN
+F 3 "" H 6850 3250 50  0000 C CNN
+	1    6850 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 3000 6850 3000
+Wire Wire Line
+	6850 2600 6850 3100
+$Comp
+L GND #PWR01
+U 1 1 5888BC04
+P 4600 3400
+F 0 "#PWR01" H 4600 3150 50  0001 C CNN
+F 1 "GND" H 4600 3250 50  0000 C CNN
+F 2 "" H 4600 3400 50  0000 C CNN
+F 3 "" H 4600 3400 50  0000 C CNN
+	1    4600 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 5888BC22
+P 6850 3400
+F 0 "#PWR02" H 6850 3150 50  0001 C CNN
+F 1 "GND" H 6850 3250 50  0000 C CNN
+F 2 "" H 6850 3400 50  0000 C CNN
+F 3 "" H 6850 3400 50  0000 C CNN
+	1    6850 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 5888BC40
+P 7200 3200
+F 0 "#PWR03" H 7200 2950 50  0001 C CNN
+F 1 "GND" H 7200 3050 50  0000 C CNN
+F 2 "" H 7200 3200 50  0000 C CNN
+F 3 "" H 7200 3200 50  0000 C CNN
+	1    7200 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 5888BC61
+P 5000 3600
+F 0 "#PWR04" H 5000 3350 50  0001 C CNN
+F 1 "GND" H 5000 3450 50  0000 C CNN
+F 2 "" H 5000 3600 50  0000 C CNN
+F 3 "" H 5000 3600 50  0000 C CNN
+	1    5000 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 2750 5000 3300
+Wire Wire Line
+	5000 3200 5400 3200
+Wire Wire Line
+	5000 2750 7050 2750
+Wire Wire Line
+	7050 2750 7050 3100
+Wire Wire Line
+	7050 3100 7400 3100
+Connection ~ 5000 3200
+Wire Wire Line
+	7400 3000 7200 3000
+Wire Wire Line
+	7200 3000 7200 3200
+Wire Wire Line
+	5400 3100 5400 3000
+Wire Wire Line
+	5400 3000 4600 3000
+Wire Wire Line
+	4600 2600 4600 3100
+$Comp
+L GND #PWR05
+U 1 1 5888BCFA
+P 6450 3400
+F 0 "#PWR05" H 6450 3150 50  0001 C CNN
+F 1 "GND" H 6450 3250 50  0000 C CNN
+F 2 "" H 6450 3400 50  0000 C CNN
+F 3 "" H 6450 3400 50  0000 C CNN
+	1    6450 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 3200 6450 3200
+Wire Wire Line
+	6450 3200 6450 3400
+$Comp
+L CONN_01X02 P1
+U 1 1 5888BD53
+P 6050 2400
+F 0 "P1" H 6050 2550 50  0000 C CNN
+F 1 "CONN_01X02" V 6150 2400 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x02_Pitch2.54mm" H 6050 2400 50  0001 C CNN
+F 3 "" H 6050 2400 50  0000 C CNN
+	1    6050 2400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6000 2600 4600 2600
+Connection ~ 4600 3000
+Wire Wire Line
+	6100 2600 6850 2600
+Connection ~ 6850 3000
+NoConn ~ 7400 3200
+NoConn ~ 7400 3300
+NoConn ~ 7400 3400
+NoConn ~ 7400 3500
+$EndSCHEMATC
